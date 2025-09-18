@@ -31,3 +31,6 @@ for (let product of products) {
 }
 
 //commit discounts
+
+ let promoPrice = product.price * (1 - discount);
+console.log (promoPrice)
