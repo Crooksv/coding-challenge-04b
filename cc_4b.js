@@ -28,9 +28,21 @@ for (let product of products) {
             discount = 0
             break
     }
-}
+
 
 //commit discounts
 
  let promoPrice = product.price * (1 - discount);
-console.log (promoPrice)
+products.promoPrice = promoPrice.toFixed(2);
+}
+console.log(products);
+
+const customers = [
+    {id: "c1", customerType: "regular", couponCode: "SAVE10", taxRate: "0.07"
+     cart: [{sku: "p1", quantity: 1}, {sku: "p3", quantity: 2}]},
+    {id: "c2", customerType: "student", couponCode: "FREESHIP", taxRate: "0.05"
+     cart: [{sku: "p2", quantity: 3}, {sku: "p4", quantity: 1}]},
+    {id: "c3", customerType: "senior", couponCode: "", taxRate: "0.07"
+     cart: [{sku: "p5", quantity: 1}]},
+]
+////commit customers
